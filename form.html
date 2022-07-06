@@ -12,31 +12,45 @@
         <div class="header">
  
             
-<h2 class="signup"><span class="home"><a href="/index.html">Home</a><h2></span>Sign-up form </h2>
+<h2 class="signup"><span class="home"><a href="/index.html">Home</a><h2></span>Fill up form to create a post </h2>
 
         </div>
         <form >
-           <label>First Name:</label>
-<input type="text" />
-
-<label>Last Name:</label>
-<input type="text" />
-
+        
 <label>User:</label>
-<input type="text" />
+<input type="text"  id='user'  autocomplete="off" />
+<span id="userVal" class="error-msg"></span>
+
 
 <label>Email:</label>
-<input type="email" />
+<input type="email" id='email' />
+<span id="emailVal" class="error-msg"></span>
+
+
+<label>Password:</label>
+<input type="text" id='pass' />
+<span id="passwordVal" class="error-msg"></span>
+
+
+<label>Confirm Password:</label>
+<input type="text" id='confirmpass' />
+<span id="confirmpassVal" class="error-msg"></span>
+
 
 <label>Blog Title:</label>
-<input type="text" />
+<input type="text" id='blogTitle' />
+
 
 <label>Blog Content:</label>
-<textarea type="text" ></textarea>
+<textarea type="text" id="blogContent"></textarea>
 
-<button type="submit">Submit</button>
-            
+<button id="button" onclick="validation()">Submit</button>
+
+     
         </form>
+        
     </div>
 </body>
+
+<script src="index.js"></script>
 </html>
